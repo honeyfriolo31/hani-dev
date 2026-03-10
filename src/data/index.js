@@ -286,3 +286,32 @@ export const menus = [
   { id: 7, name: "Alcoholic Drinks", bgColor: "#b73e3e" ,icon: "🍺", items: alcoholicDrinks },
   { id: 8, name: "Salads", bgColor: "#5b45b0" ,icon: "🥗", items: salads }
 ]
+
+
+export const experiences = [
+  {
+    role: "Quality Assurance Specialist",
+    company: "GOGO IT LAB",
+    year: "2023 - 2025",
+  },
+  {
+    role: "Software QA & Developer Intern",
+    company: "Go Virtual Assistants Inc. (GoTeam)",
+    year: "2023",
+  },
+  {
+    role: "BS Information Technology",
+    company: "La Salle University - Ozamiz",
+    year: "2023",
+  },
+  {
+    role: "Fullstack Developer ( Capstone Project)",
+    company: "La Salle University - Ozamiz",
+    year: "2021-2023",
+  },
+  {
+    role: "Hello World! 👋",
+    company: "First coding using C langguage",
+    year: "2019",
+  },
+];

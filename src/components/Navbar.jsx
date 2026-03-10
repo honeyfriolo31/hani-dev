@@ -3,7 +3,7 @@ import honey from "../assets/images/honey-bee.png"
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center px-8 py-4 border-b sticky top-0">
+    <nav className="flex justify-between items-center px-8 py-4 border-b">
 
       <img className='size-16' src={honey} alt="honey-bee" />
 
