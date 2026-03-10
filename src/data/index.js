@@ -311,7 +311,7 @@ export const experiences = [
   },
   {
     role: "Hello World! 👋",
-    company: "First coding using C langguage",
+    company: "First coding using C language",
     year: "2019",
   },
 ];

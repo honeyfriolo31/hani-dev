@@ -30,13 +30,13 @@ const Profile = () => {
                     </div>
 
                     {/* Location */}
-                    <div className="flex items-center text-gray-600 mt-1 gap-2">
+                    <div className="flex items-center text-gray-600 mt-1 gap-2 text-sm">
                         <CiLocationOn size={16} />
                         <span>Abu Dhabi, United Arab Emirates</span>
                     </div>
 
                     {/* Roles */}
-                    <p className="text-gray-700 mt-3 text-lg">
+                    <p className="text-gray-700 mt-3 text-base">
                         Front-end Developer / Backend Developer
                     </p>
 
