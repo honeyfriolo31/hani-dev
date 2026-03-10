@@ -1,8 +1,19 @@
-import React from 'react'
+import React from 'react';
+import honey from "../assets/images/honey-bee.png"
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <nav className="flex justify-between items-center px-8 py-4 border-b sticky top-0">
+
+      <img className='size-16' src={honey} alt="honey-bee" />
+
+      <div className="space-x-6 text-gray-600">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+    </nav>
   )
 }
 
