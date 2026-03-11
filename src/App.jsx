@@ -15,10 +15,10 @@ function App() {
         {/* <Navbar /> */}
       <Profile />
       {/* <Hero /> */}
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-2">
+      {/* <div className="grid grid-cols-1 md:grid-cols-6 gap-2"> */}
       <About />
       <Experience />
-      </div>
+      {/* </div> */}
        <Skills />
       <Projects />
       <Contact />

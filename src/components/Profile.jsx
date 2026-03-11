@@ -1,78 +1,72 @@
 import React from 'react';
-import { CiLocationOn, CiMail, CiSaveDown2, CiLinkedin, CiBookmarkCheck, CiBoxList} from "react-icons/ci";
-import profilepic from "../assets/images/honey-profile.png"
+import { CiLocationOn, CiMail, CiLinkedin, CiBookmarkCheck, CiBoxList } from "react-icons/ci";
+import profilepic from "../assets/images/honey-profile.jpg"
 
 const Profile = () => {
     return (
-        <div className="w-full bg-gray-100 py-10 px-8">
+        <div className="max-w-4xl mx-auto px-4 py-8">
+            <section className='mb-8 animate-fade-in'>
+                <div className='flex items-center gap-4 md:gap-6 border-2 border-blue-300'>
 
-            <div className="max-w-6xl mx-auto flex items-start gap-8">
+                    {/* Main Content */}
+                    {/* Image */}
+                    <img src={profilepic} alt="Profile" className="w-40 h-40 md:w-40 md:h-40 flex-shrink-0 object-cover" />
 
-                {/* Profile Image */}
-                <div className="w-40 h-40 flex-shrink-0">
-                    <img
-                        src={profilepic}
-                        alt="Profile"
-                        className="w-full h-full object-cover rounded-lg"
-                    />
-                </div>
+                    {/* flex-1 allow a flex item to grow and shrink as needed */}
+                    <div className='flex-1 min-w-0 border-2 border-yellow-300 '>
 
-                {/* Main Content */}
-                <div className="flex-1">
+                        <div className='flex gap-2'>
+                            {/* Name */}
+                            <h1 className="text-xl md:text2xl font-bold truncate">
+                                Honey Grace Friolo
+                            </h1>
+                            <span className="text-blue-500 font-medium"><CiBookmarkCheck size={25} /></span>
+                        </div>
 
-                    {/* Name */}
-                    <div className="flex items-center gap-2">
-                        <h1 className="text-3xl font-bold">
-                            Honey Grace Friolo
-                        </h1>
+                        {/* Location */}
+                        <div className='flex border-2 border-blue-300'>
+                            <CiLocationOn size={16} />
+                            <span className='text-xs md:text-sm'>Abu Dhabi, United Arab Emirates</span>
+                        </div>
 
-                        <span className="text-blue-500 font-medium"><CiBookmarkCheck size={25} /></span>
-                    </div>
 
-                    {/* Location */}
-                    <div className="flex items-center text-gray-600 mt-1 gap-2 text-sm">
-                        <CiLocationOn size={16} />
-                        <span>Abu Dhabi, United Arab Emirates</span>
-                    </div>
+                        {/* Roles */}
+                        <p className="flex text-xs md:text-sm mt-2">
+                            Front-end Developer / Backend Developer
+                        </p>
 
-                    {/* Roles */}
-                    <p className="text-gray-700 mt-3 text-base">
-                        Front-end Developer / Backend Developer
-                    </p>
+                        {/* Buttons */}
 
-                    {/* Buttons */}
-                    <div className="flex flex-wrap gap-4 mt-6" >
+                        <div className='block'>
 
-                        {/* Download CV Button */}
-                        <button className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition">
-                            Download CV
-                            <CiSaveDown2 size={18} />
-                        </button>
+                            {/* Email */}
+                            <button className='px-2 py-2 border rounded-md hover:bg-gray-200'>
+                                <a href="mailto:hgfriolo@gmail.com" className="flex text-xs md:text-sm ">
+                                    <CiMail size={18} />
+                                    Send Email
+                                </a>
+                            </button>
 
-                        {/* Email */}
-                        <a href="mailto:hgfriolo@gmail.com" className="flex items-center gap-2 bg-white border px-4 py-2 rounded-md hover:scale-105 transition duration-300">
-                            <CiMail size={18} />
-                            Send Email
-                        </a>
+                            <button className='bg-white border px-2 py-2 rounded-md hover:scale-105 transition duration-300 overflow-hidden'>
+                                {/* LinkedIn */}
+                                <a href='https://www.linkedin.com/in/honey-grace-friolo-1802b2289/' target='_blank' className="flex text-xs md:text-sm ">
+                                    <CiLinkedin size={18} />
+                                    LinkedIn
+                                </a>
+                            </button>
 
-                        {/* LinkedIn */}
-                        <a href='https://www.linkedin.com/in/honey-grace-friolo-1802b2289/' target='_blank' className="flex items-center gap-2 bg-white border px-4 py-2 rounded-md hover:scale-105 transition duration-300">
-                            <CiLinkedin size={18} />
-                            LinkedIn
-                        </a>
-
-                        {/* Project */}
-                        <a href='#projects' className="flex items-center gap-2 bg-white border px-4 py-2 rounded-md hover:scale-105 transition duration-300">
-                            <CiBoxList size={18} />
-                            Project
-                        </a>
-
+                            <button className='bg-white border px-2 py-2 rounded-md hover:scale-105 transition duration-300'>
+                                {/* Project */}
+                                <a href='#projects' className="flex text-xs md:text-sm">
+                                    <CiBoxList size={18} />
+                                    Project
+                                </a>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-
-
+            </section>
         </div>
     )
 }
