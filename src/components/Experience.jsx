@@ -20,28 +20,25 @@ const Experience = () => {
 
               {/* Timeline Node */}
               <span
-                className={`absolute -left-8 top-2 w-4 h-3 border-2 ${
-                  exp.active
+                className={`absolute -left-8 top-2 w-4 h-3 border-2 ${exp.active
                     ? "bg-black border-black"
                     : "bg-white border-gray-300"
-                }`}
+                  }`}
               />
 
               <div className="relative justify-between gap-2 items-start ">
-                  <h3 className="text-sm font-semibold">
-                    {exp.role}
-                  </h3>
+                <h3 className="text-sm font-semibold">
+                  {exp.role}
+                </h3>
 
                 <div className="flex items-center justify-between">
                   <p className="text-xs text-gray-600 mt-1">
                     {exp.company}
                   </p>
-                <span className="left-0 top-1.5 text-gray-500 text-xs flex">
-                  {exp.year}
-                </span>
+                  <span className="left-0 top-1.5 text-gray-500 text-xs flex">
+                    {exp.year}
+                  </span>
                 </div>
-
-
               </div>
             </div>
           ))}

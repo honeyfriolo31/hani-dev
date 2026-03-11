@@ -3,9 +3,9 @@ import { projects } from '../data/projects';
 
 const Projects = () => {
     return (
-        <section id="projects" className="py-20 px-8 max-w-6xl mx-auto">
+        <section id="projects" className="p-4 col-span-1 md:col-span-4 space-y-2 group animate-fade-in border-r border-gray-100 border-solid">
 
-            <h2 className="text-3xl font-semibold mb-10">
+            <h2 className="text-lg font-semibold mb-6">
                 Projects
             </h2>
 
@@ -16,17 +16,17 @@ const Projects = () => {
                         key={project.title}
                         className="border p-6 rounded-xl hover:shadow-lg"
                     >
-                        <h3 className="font-semibold text-lg mb-2">
+                        <h3 className="text-sm font-semibold mb-2">
                             {project.title}
                         </h3>
 
-                        <p className="text-gray-500 mb-4">
+                        <p className="text-xs text-gray-500 mb-4">
                             {project.description}
                         </p>
 
                         <a
                             href={project.github}
-                            className="text-blue-600"
+                            className="text-xs text-blue-600"
                         >
                             View Code →
                         </a>
