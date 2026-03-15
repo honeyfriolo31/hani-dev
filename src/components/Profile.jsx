@@ -4,15 +4,15 @@ import profilepic from "../assets/images/honey-profile.jpg"
 
 const Profile = () => {
     return (
-        <section className='mb-8 animate-fade-in. border border-blue-500'>
-            <div className='flex items-center gap-4 md:gap-6 border border-yellow-500'>
+        <section className='mb-8 animate-fade-in'>
+            <div className='flex items-center gap-4 md:gap-6'>
 
                 {/* Main Content */}
                 {/* Image */}
-                <img src={profilepic} alt="Profile" className="w-40 h-40 md:w-40 md:h-40 flex-shrink-0 object-cover " />
+                <img src={profilepic} alt="Profile" className="w-40 h-40 md:w-40 md:h-40 flex-shrink-0 object-cover" />
 
                 {/* flex-1 allow a flex item to grow and shrink as needed */}
-                <div className='flex-1 min-w-0 border border-orange-500'>
+                <div className='flex-1 min-w-0 '>
 
                     <div className='flex gap-2'>
                         {/* Name */}
@@ -23,7 +23,7 @@ const Profile = () => {
                     </div>
 
                     {/* Location */}
-                    <div className='flex md:mt-2 border border-orange-500 items-center gap-1'>
+                    <div className='flex md:mt-2 items-center gap-1'>
                         <CiLocationOn size={22} />
                         <p className='text-xs md:text-lg '>Abu Dhabi, United Arab Emirates</p>
                     </div>
