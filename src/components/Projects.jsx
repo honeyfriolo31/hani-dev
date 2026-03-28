@@ -25,10 +25,11 @@ const Projects = () => {
                         </p>
 
                         <a
-                            href={project.github}
+                            href={project.url}
+                            target='_blank'
                             className="text-xs text-blue-600"
                         >
-                            View Code →
+                         Go to poject link →
                         </a>
 
                     </div>

@@ -12,7 +12,7 @@
   {
     id: 3,
     category: "DevOps & Tools",
-    skills: ["Docker", "Git", "Github", "Bitbucket", "VS Code", "Cursor", "JIRA", "Slack", "ClickUp", "Chatwork"]
+    skills: ["Docker", "Git", "Github", "Bitbucket", "VS Code", "Cursor", "JIRA", "Slack", "ClickUp"]
   },
 
     {
@@ -25,6 +25,7 @@
 
 export const experiences = [
   {
+    active: true,
     role: "Frontend Upskill",
     company: "Self-study",
     year: "Present",

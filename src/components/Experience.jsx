@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { experiences } from "../data/index.js"
 
 const Experience = () => {
+  const [active, isActive] = useState("bg-black border-black");
+
   return (
     <section className="p-4 col-span-1 md:col-span-2 md:row-span-3 space-y-2 animate-fade-in animation-delay-200">
       <div className="max-w-4xl mx-auto">
@@ -20,7 +22,7 @@ const Experience = () => {
 
               {/* Timeline Node */}
               <span
-                className={`absolute -left-8 top-2 w-4 h-3 border-2 ${exp.active
+                className={`absolute -left-8 top-2 w-4 h-3 border-2 hover:bg-black ${exp.active
                     ? "bg-black border-black"
                     : "bg-white border-gray-300"
                   }`}
